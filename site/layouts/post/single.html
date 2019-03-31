@@ -7,9 +7,9 @@
       <p>Read in {{ .ReadingTime }} minutes</p>
     </div>
     <div class="cms mw6">
-      {{ if eq .Params.showblurb true }}
+
       <p>{{ .Description }}</p>
-      {{ end }}
+      
       {{ if .Params.image }}<img src="{{ .Params.image }}" alt="{{ .Title }}" />{{ end }}
       {{ .Content }}
     </div>
